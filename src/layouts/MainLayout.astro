@@ -4,6 +4,7 @@ import Footer from "../components/Footer.astro";
 import "../styles/tailwind.css";
 import "animate.css";
 const { title } = Astro.props;
+const { hasCarouselTekst = false } = Astro.props;
 ---
 
 <html lang="da">
@@ -17,6 +18,28 @@ const { title } = Astro.props;
   <body>
     <header>
       <Header />
+      <div class="billede_med_tekst">
+        {
+          hasCarouselTekst && (
+            <div class="sissel">
+              <div class="sissel-slide">
+                <img src="/sissel.svg" alt="Sissel Edelbo - kun i butik" />
+                <img src="/sissel.svg" alt="Sissel Edelbo - kun i butik" />
+                <img src="/sissel.svg" alt="Sissel Edelbo - kun i butik" />
+                <img src="/sissel.svg" alt="Sissel Edelbo - kun i butik" />
+                <img src="/sissel.svg" alt="Sissel Edelbo - kun i butik" />
+              </div>
+              <div class="sissel-slide">
+                <img src="/sissel.svg" alt="Sissel Edelbo - kun i butik" />
+                <img src="/sissel.svg" alt="Sissel Edelbo - kun i butik" />
+                <img src="/sissel.svg" alt="Sissel Edelbo - kun i butik" />
+                <img src="/sissel.svg" alt="Sissel Edelbo - kun i butik" />
+                <img src="/sissel.svg" alt="Sissel Edelbo - kun i butik" />
+              </div>
+            </div>
+          )
+        }
+      </div>
     </header>
 
     <main class="max-w-5xl mx-auto p-6">
@@ -28,3 +51,52 @@ const { title } = Astro.props;
     </footer>
   </body>
 </html>
+
+<style>
+  /***************************** Sissel Edelbo infinite carousel ******************************/
+
+  .billede_med_tekst {
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+
+  .sissel {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .sissel {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: var(--groen200);
+  }
+
+  .sissel-slide {
+    display: inline-block;
+    animation: 45s slide infinite linear;
+  }
+
+  .sissel-slide img {
+    width: auto;
+    height: 28px;
+  }
+  /***** Desktop *****/
+  @media (min-width: 800px) {
+    .sissel-slide img {
+      height: 32px;
+    }
+  }
+</style>
