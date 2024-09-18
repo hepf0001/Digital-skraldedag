@@ -5,13 +5,16 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="Ressourcer">
-  <div class="">
-    <div class="pb-10">
-      <h1 class="pt-32 uppercase text-4xl font-bold">Ressourcer og</h1>
-      <h1 class="pt-1 uppercase text-4xl font-bold">materialer</h1>
+  <div class="md:grid grid-cols-2">
+  <h1 class="pt-32 pb-8 uppercase text-4xl font-bold col-start-2 whitespace-pre-line">
+        Ressourcer 
+        og materialer</h1>
+        </div>
+<div class="space-y-8 md:grid grid-cols-2 md:space-y-0">
+		<div>
+			<img class="sd:pt-8" src="telefon-mails.svg" alt="Telefon der flyder med mailbreve" />
     </div>
-    <img src="/orginal_logo.png" alt="placeholder" />
-    <div>
+		    <div>
       <div class="pb-10"><Link href="https://drive.google.com/file/d/1LZAIsGLSJl7fOdqdp53YscYc0XTd2xv3/view" target="_blank" variant="textlink" size="standard">Retningslinjer for enkeltpersoner</Link></div>
       <div class="pb-10"><Link href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view" target="_blank" variant="textlink" size="standard">Sådan rydder du op på computer og drev</Link></div>
       <div class="pb-10"><Link href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view" target="_blank" variant="textlink" size="standard">Sådan rydder du op i dine e-mails</Link></div>
