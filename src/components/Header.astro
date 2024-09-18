@@ -3,16 +3,16 @@ import Link from "../components/Link.astro";
 import Button from "../components/Button.astro";
 ---
 
-<div x-data="{ showmenu: false }" class="p-4 fixed z-10 w-full bg-gray-100">
+<div x-data="{ showmenu: false }" class="p-4 overflow-auto fixed z-10 w-full bg-gray-100">
   <div id="navbar" class="flex flex-row justify-between">
-    <div id="logo" class="">
+    <div id="logo" class="flex justify-center items-center">
       <a href="/"><img class="h-12 w-full object-cover" src="/public/orginal_logo.png" alt="Logo" /></a>
     </div>
-    <nav id="desktopmenu" class="hidden lg:block">
-      <ul class="flex flex-row gap-4">
+    <nav id="desktopmenu" class="hidden lg:inline-block">
+      <ul class="flex flex-row gap-4 justify-center items-center">
         <li class=""><a href="/how_to">Sådan deltager du</a></li>
         <li class=""><a href="/ressourcer">Ressourcer</a></li>
-        <div class="pb-6 max-w-xl mx-auto">
+        <div class="max-w-xl mx-auto">
           <a href="/formular_1"><Button variant="primary" size="small">Del resultater</Button></a>
         </div>
       </ul>
