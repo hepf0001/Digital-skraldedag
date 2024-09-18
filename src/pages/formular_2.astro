@@ -5,49 +5,55 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="Formular">
-  <h1>Vi mangler bare lige...</h1>
+  <div class="">
+    <h1 class="pt-32 uppercase text-4xl font-bold">Vi mangler</h1>
+    <h1 class="pt-1 uppercase text-4xl font-bold">bare lige...</h1>
 
-  <form class="pb-16">
-    <h2 class="pb-6 max-w-xl mx-auto text-2xl font-semibold uppercase">Ekspemple på forms</h2>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="antal">Antal:</label>
-      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="number" id="antal" placeholder="1" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="levering">Levering:</label>
-      <input class="rounded bg-gray-200 border-transparent focus:border-transparent focus:bg-gray-200 text-gray-700 focus:ring-1 focus:ring-offset-2 focus:ring-gray-500" type="radio" id="postnord" name="levering" />
-      <label for="postnord" checked="checked">PostNord</label>
-      <input class="rounded bg-gray-200 border-transparent focus:border-transparent focus:bg-gray-200 text-gray-700 focus:ring-1 focus:ring-offset-2 focus:ring-gray-500" type="radio" id="afhent" name="levering" />
-      <label for="afhent">Afhent</label>
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="name">Name:</label>
-      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" id="name" placeholder="Name" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="adresse">Adresse:</label>
-      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" id="name" placeholder="Adresse" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="email">e-mail:</label>
-      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="email" id="e-mail" placeholder="e-mail" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="postnummer">Postnummer:</label>
-      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" id="postnummer" placeholder="Postnummer" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="bynavn">Bynavn:</label>
-      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" id="bynavn" placeholder="Bynavn" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="telefon">Telefon nr:</label>
-      <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="tel" id="telefon" placeholder="Telefon nr" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto">
-      <label for="nyhedsbrev">Nyhedsbrev:</label>
-      <input class="rounded bg-gray-200 border-transparent focus:border-transparent focus:bg-gray-200 text-gray-700 focus:ring-1 focus:ring-offset-2 focus:ring-gray-500" type="checkbox" id="nyhedsbrev" />
-    </div>
-    <div class="pb-6 max-w-xl mx-auto"><Button variant="primary" size="small">Køb</Button></div>
-  </form>
+    <form class="pt-10 pb-5">
+      <div class="max-w-xl mx-auto">
+        <div class="pb-6 max-w-xl mx-auto">
+          <label for="name"></label>
+          <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" id="name" placeholder="Name" />
+        </div>
+        <div class="pb-6 max-w-xl mx-auto">
+          <label for="email"></label>
+          <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="email" id="e-mail" placeholder="e-mail" />
+        </div>
+        <div class="pb-6 max-w-xl mx-auto">
+          <label for="country"></label>
+          <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="text" id="country" placeholder="Land" />
+        </div>
+        <div class="pb-6 max-w-xl mx-auto flex items-center gap-1">
+          <input class="rounded bg-gray-200 border-transparent focus:border-transparent focus:bg-gray-200 text-gray-700 focus:ring-1 focus:ring-offset-2 focus:ring-gray-500" type="checkbox" id="nyhedsbrev" />
+          <label class="pr-5" for="nyhedsbrev">
+            <p>*<Link href="https://www.digitalcleanupday.org/terms-conditions" target="_blank" variant="textlink" size="standard">Jeg er enig med betingelserne</Link></p>
+          </label>
+        </div>
+
+        <div class="pb-6 max-w-xl mx-auto">
+          <input class="rounded bg-gray-200 border-transparent focus:border-transparent focus:bg-gray-200 text-gray-700 focus:ring-1 focus:ring-offset-2 focus:ring-gray-500" type="checkbox" id="nyhedsbrev" />
+          <label class="pr-5" for="nyhedsbrev">Tilmed dig vores nyhedsbrev</label>
+        </div>
+      </div>
+      <div class="pt-10 pb-6 max-w-xl mx-auto text-center">
+        <!--<a href="/formular_2">
+              <Button variant="primary" size="small">Fortsæt</Button>
+            </a>-->
+        <div class="pb-6 max-w-xl mx-auto">
+          <Button variant="primary" size="small">Registrer dig!</Button>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-end">
+        <div class="text-center">
+          <div class="flex justify-center pb-4">
+            <img src="/question_mark.svg" alt="Spørgsmålstegn icorn" />
+          </div>
+          <div class="flex justify-center">
+            <Link href="/how_to" target="_blank" variant="textlink" size="standard">Sådan deltager du</Link>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 </MainLayout>
