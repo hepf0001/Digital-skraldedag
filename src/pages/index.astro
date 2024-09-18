@@ -38,7 +38,7 @@ import Link from "../components/Link.astro";
       </p>
     </article>
     <article class="col-span-1">
-      <img src="/public/telefon-mails.svg" alt="" />
+      <img src="/public/telefon-mails.svg" alt="Telefon med mails" />
     </article>
   </section>
   <h1 class="mt-20 mb-5">hvorfor er det vigtigt?</h1>
@@ -70,14 +70,26 @@ import Link from "../components/Link.astro";
   <p>her kommer banner</p>
   <h1 class="mt-20 mb-5">Inviter en ven til digital skraldedag!</h1>
   <section class="grid grid-cols-2 mb-20">
-    <article>
-      <img src="/public/telefon-mails.svg" alt="Telefon med mails" />
+    <article class="flex flex-col justify-center">
+      <div>
+        <img
+          class="w-64"
+          src="/public/telefon-mails.svg"
+          alt="Telefon med mails"
+        />
+      </div>
       <div class="pb-6 max-w-xl mx-auto">
         <Button variant="primary" size="large">Inviter en ven</Button>
       </div>
     </article>
-    <article>
-      <img src="/public/computer-mails.svg" alt="Computer med mails" />
+    <article class="flex flex-col justify-center">
+      <div>
+        <img
+          class="w-64"
+          src="/public/computer-mails.svg"
+          alt="Computer med mails"
+        />
+      </div>
       <div class="pb-6 max-w-xl mx-auto">
         <Button variant="primary" size="large">Del resultat</Button>
       </div>
