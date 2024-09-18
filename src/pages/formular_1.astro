@@ -5,41 +5,39 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="Formular">
-  <div class="">
-    <h1 class="pt-32">Registrer din</h1>
-    <h1 class="pt-1">digitale</h1>
-    <h1 class="pt-1">oprydning</h1>
+  <h1 class="pt-32">Registrer din</h1>
+  <h1 class="pt-1">digitale</h1>
+  <h1 class="pt-1">oprydning</h1>
 
-    <form class="pt-32 pb-20">
-      <div class="max-w-xl mx-auto grid gap-5 grid-cols-2">
-        <div class="pb-6">
-          <label class="text-lg pr-5" for="antal">Antal af deltager</label>
-          <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="number" id="antal" placeholder="1" />
-        </div>
-        <div class="pb-6">
-          <label class="text-lg pr-5" for="gb">GB slettet</label>
-          <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="number" id="gb" placeholder="0" />
-        </div>
+  <form class="pt-32 pb-20">
+    <div class="max-w-xl mx-auto grid gap-5 grid-cols-2">
+      <div class="pb-6">
+        <label class="text-lg pr-5" for="antal">Antal af deltager</label>
+        <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="number" id="antal" placeholder="1" />
       </div>
-      <div class="pt-10 pb-6 max-w-xl mx-auto text-center">
-        <!--<a href="/formular_2">
+      <div class="pb-6">
+        <label class="text-lg pr-5" for="gb">GB slettet</label>
+        <input class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0" type="number" id="gb" placeholder="0" />
+      </div>
+    </div>
+    <div class="pt-10 pb-6 max-w-xl mx-auto text-center">
+      <!--<a href="/formular_2">
           <Button variant="primary" size="small">Fortsæt</Button>
         </a>-->
-        <div class="pb-6 max-w-xl mx-auto">
-          <Link href="/formular_2" target="_blank" variant="primary" size="small">Fortsæt</Link>
-        </div>
+      <div class="pb-6 max-w-xl mx-auto">
+        <Link href="/formular_2" target="_blank" variant="primary" size="small">Fortsæt</Link>
       </div>
+    </div>
 
-      <div class="flex flex-col items-end">
-        <div class="text-center">
-          <div class="flex justify-center pb-4">
-            <img src="/question_mark.svg" alt="Spørgsmålstegn icorn" />
-          </div>
-          <div class="flex justify-center">
-            <Link href="/how_to" target="_blank" variant="textlink" size="standard">Sådan deltager du</Link>
-          </div>
+    <div class="flex flex-col items-end">
+      <div class="text-center">
+        <div class="flex justify-center pb-4">
+          <img src="/question_mark.svg" alt="Spørgsmålstegn icorn" />
+        </div>
+        <div class="flex justify-center">
+          <Link href="/how_to" target="_blank" variant="textlink" size="standard">Sådan deltager du</Link>
         </div>
       </div>
-    </form>
-  </div>
+    </div>
+  </form>
 </MainLayout>
