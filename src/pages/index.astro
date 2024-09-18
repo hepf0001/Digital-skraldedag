@@ -5,21 +5,25 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="Forside" hasCarouselTekst="true">
-  <section class="grid grid-cols-3 my-20">
+  <section class="grid grid-cols-3 my-20 gap-x-20">
     <article class="col-span-2">
-      <p>image</p>
+      <img src="/public/jordklode-hero.svg" alt="" />
     </article>
-    <article class="col-span-1">
-      <h1>Digital Skraldedag</h1>
-      <div class="pb-6 max-w-xl mx-auto">
+    <article class="col-span-1 flex flex-col justify-end">
+      <div>
+        <h1>Digital Skraldedag</h1>
+      </div>
+      <div class="pb-6 max-w-xl mt-4">
         <Button variant="primary" size="large">Del resultat</Button>
       </div>
     </article>
   </section>
   <p>her kommer banner</p>
-  <section class="grid grid-cols-3 my-20">
+  <section class="grid grid-cols-3 py-20 gap-x-20">
     <article class="col-span-2">
-      <h1 class="mb-5">Hvad er Digital Skraldedag?</h1>
+      <h1 class="mb-5 flex flex-col justify-end">
+        Hvad er Digital Skraldedag?
+      </h1>
       <p>
         Digital Skraldedag er en dag, der er dedikeret til at rydde op i vores
         digitale liv, ligesom vi rydder op i vores fysiske miljø på World
@@ -34,13 +38,13 @@ import Link from "../components/Link.astro";
       </p>
     </article>
     <article class="col-span-1">
-      <p>image</p>
+      <img src="/public/telefon-mails.svg" alt="" />
     </article>
   </section>
   <h1 class="mt-20 mb-5">hvorfor er det vigtigt?</h1>
   <section class="grid grid-cols-5 mb-20">
     <article>
-      <p>img</p>
+      <img src="/public/jordklode-co2.svg" alt="" />
       <p>Hjælper med at reducere CO2-udledning</p>
     </article>
     <article>
@@ -67,13 +71,13 @@ import Link from "../components/Link.astro";
   <h1 class="mt-20 mb-5">Inviter en ven til digital skraldedag!</h1>
   <section class="grid grid-cols-2 mb-20">
     <article>
-      <p>img</p>
+      <img src="/public/telefon-mails.svg" alt="Telefon med mails" />
       <div class="pb-6 max-w-xl mx-auto">
         <Button variant="primary" size="large">Inviter en ven</Button>
       </div>
     </article>
     <article>
-      <p>img</p>
+      <img src="/public/computer-mails.svg" alt="Computer med mails" />
       <div class="pb-6 max-w-xl mx-auto">
         <Button variant="primary" size="large">Del resultat</Button>
       </div>
@@ -81,7 +85,7 @@ import Link from "../components/Link.astro";
   </section>
   <section class="grid grid-cols-3 my-20">
     <article class="col-span-1">
-      <p>img</p>
+      <img src="/public/paere.svg" alt="lyspære" />
     </article>
     <article class="col-span-2">
       <h1>vidste du at?</h1>
