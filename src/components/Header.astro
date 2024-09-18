@@ -6,10 +6,10 @@ import Button from "../components/Button.astro";
 <div x-data="{ showmenu: false }" class="p-4 fixed z-10 w-full bg-gray-100">
   <div id="navbar" class="grid grid-cols-4">
     <div class="col-span-1 place-self-start">
-      <div id="logo" class="flex justify-center items-center">
+      <div id="logo" class="flex justify-center items-center gap-1">
         <a href="/"><img class="h-12 w-full object-cover" src="/public/orginal_logo.png" alt="Logo" /></a>
         <nav id="desktopmenu" class="hidden lg:inline-block">
-          <ul class="flex flex-row gap-4 justify-center items-center">
+          <ul class="flex flex-row gap-5 justify-center items-center">
             <li class=""><a href="/">Hjem</a></li>
             <li class=""><a href="/how_to">Sådan deltager du</a></li>
             <li class=""><a href="/ressourcer">Ressourcer</a></li>
@@ -19,7 +19,7 @@ import Button from "../components/Button.astro";
     </div>
     <div class="place-self-end col-span-3">
       <div class="flex flex-row">
-        <div>
+        <div class="pr-5">
           <a href="/formular_1"><Button variant="primary" size="small">Del resultater</Button></a>
         </div>
         <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"
@@ -33,10 +33,10 @@ import Button from "../components/Button.astro";
 
   <nav id="mobilmenu" class="flex flex-col content-center pt-4" x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
     <ul>
-      <li class="text-center py-2 border-y-2"><a href="/">Hjem</a></li>
-      <li class="text-center py-2 border-y-2"><a href="/how_to">Sådan deltager du</a></li>
-      <li class="text-center py-2 border-b-2"><a href="/ressourcer">Ressourcer</a></li>
-      <div class="pb-6 max-w-xl mx-auto flex justify-center items-center">
+      <li class="text-center py-2 border-y-2 pt-5 pb-5"><a href="/">Hjem</a></li>
+      <li class="text-center py-2 border-b-2 pt-5 pb-5"><a href="/how_to">Sådan deltager du</a></li>
+      <li class="text-center py-2 border-b-2 pt-5 pb-5"><a href="/ressourcer">Ressourcer</a></li>
+      <div class="max-w-xl mx-auto flex justify-center items-center pt-5 pb-5">
         <a href="/formular_1"><Button variant="primary" size="small">Del resultater</Button></a>
       </div>
     </ul>
