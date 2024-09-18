@@ -4,7 +4,7 @@ import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 ---
 
-<MainLayout title="Forside">
+<MainLayout title="Forside" hasCarouselTekst="true">
   <div class="grid grid-cols-3">
     <div class="col-span-2">
       <p>image</p>
@@ -17,14 +17,13 @@ import Link from "../components/Link.astro";
     </div>
   </div>
   <p>her kommer banner</p>
+
   <div class="grid grid-cols-3">
     <div class="col-span-2"></div>
     <div class="col-span-1"></div>
   </div>
   <article class="pb-16">
-    <h2 class="pb-6 max-w-xl mx-auto text-2xl font-semibold uppercase">
-      Ekspempler på brug af knapper
-    </h2>
+    <h2 class="pb-6 max-w-xl mx-auto text-2xl font-semibold uppercase">Ekspempler på brug af knapper</h2>
     <div class="pb-6 max-w-xl mx-auto">
       <Button variant="primary" size="large">Køb billet</Button>
     </div>
@@ -46,86 +45,84 @@ import Link from "../components/Link.astro";
   </article>
 
   <article class="pb-16">
-    <h2 class="pb-6 max-w-xl mx-auto text-2xl font-semibold uppercase">
-      Ekspempler på brug af links
-    </h2>
-    <h3 class="pb-6 max-w-xl mx-auto text-xl font-semibold uppercase">
-      Tekst link
-    </h3>
+    <h2 class="pb-6 max-w-xl mx-auto text-2xl font-semibold uppercase">Ekspempler på brug af links</h2>
+    <h3 class="pb-6 max-w-xl mx-auto text-xl font-semibold uppercase">Tekst link</h3>
     <div class="pb-6 max-w-xl mx-auto">
       <p>
-        Link til <Link
-          href="https://kea.dk/"
-          target="_blank"
-          variant="textlink"
-          size="standard"
-        >
-          En anden side</Link
-        >
+        Link til <Link href="https://kea.dk/" target="_blank" variant="textlink" size="standard"> En anden side</Link>
       </p>
     </div>
-    <h3 class="pb-6 max-w-xl mx-auto text-xl font-semibold uppercase">
-      Knap link
-    </h3>
+    <h3 class="pb-6 max-w-xl mx-auto text-xl font-semibold uppercase">Knap link</h3>
     <div class="pb-6 max-w-xl mx-auto">
       <p>
-        Link til <Link
-          href="https://kea.dk/"
-          target="_blank"
-          variant="primary"
-          size="large">En anden side</Link
-        >
+        Link til <Link href="https://kea.dk/" target="_blank" variant="primary" size="large">En anden side</Link>
       </p>
     </div>
     <div class="pb-6 max-w-xl mx-auto">
       <p>
-        Link til <Link
-          href="https://kea.dk/"
-          target="_blank"
-          variant="primary"
-          size="medium">En anden side</Link
-        >
+        Link til <Link href="https://kea.dk/" target="_blank" variant="primary" size="medium">En anden side</Link>
       </p>
     </div>
     <div class="pb-6 max-w-xl mx-auto">
       <p>
-        Link til <Link
-          href="https://kea.dk/"
-          target="_blank"
-          variant="primary"
-          size="small">En anden side</Link
-        >
+        Link til <Link href="https://kea.dk/" target="_blank" variant="primary" size="small">En anden side</Link>
       </p>
     </div>
     <div class="pb-6 max-w-xl mx-auto">
       <p>
-        Link til <Link
-          href="https://kea.dk/"
-          target="_blank"
-          variant="secondary"
-          size="large">En anden side</Link
-        >
+        Link til <Link href="https://kea.dk/" target="_blank" variant="secondary" size="large">En anden side</Link>
       </p>
     </div>
     <div class="pb-6 max-w-xl mx-auto">
       <p>
-        Link til <Link
-          href="https://kea.dk/"
-          target="_blank"
-          variant="secondary"
-          size="medium">En anden side</Link
-        >
+        Link til <Link href="https://kea.dk/" target="_blank" variant="secondary" size="medium">En anden side</Link>
       </p>
     </div>
     <div class="pb-6 max-w-xl mx-auto">
       <p>
-        Link til <Link
-          href="https://kea.dk/"
-          target="_blank"
-          variant="secondary"
-          size="small">En anden side</Link
-        >
+        Link til <Link href="https://kea.dk/" target="_blank" variant="secondary" size="small">En anden side</Link>
       </p>
     </div>
   </article>
 </MainLayout>
+
+<style>
+  .sissel {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .sissel {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: var(--groen200);
+  }
+
+  .sissel-slide {
+    display: inline-block;
+    animation: 45s slide infinite linear;
+  }
+
+  .sissel-slide img {
+    width: auto;
+    height: 28px;
+  }
+  /***** Desktop *****/
+  @media (min-width: 800px) {
+    .sissel-slide img {
+      height: 32px;
+    }
+  }
+</style>
