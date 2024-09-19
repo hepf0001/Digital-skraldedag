@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 193.39 78.01">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #158b44;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: HelveticaNeue-CondensedBold, 'Helvetica Neue';
+        font-size: 36px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-2 {
+        fill: #132816;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(0 65.91)"><tspan x="0" y="0">SKRALDEDAG</tspan></text>
+  <text class="cls-1" transform="translate(0 30.85)"><tspan x="0" y="0">DIGI</tspan><tspan class="cls-4" x="59.26" y="0">T</tspan><tspan class="cls-3" x="74.56" y="0">AL</tspan></text>
+</svg>
