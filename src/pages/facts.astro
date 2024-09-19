@@ -5,5 +5,36 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="Facts">
-  <h1>Flere facts!</h1>
+  <h1 class="pt-32">Flere facts!</h1>
+  <article class="md:grid grid-cols-2 gap-8 py-8">
+
+    <div>
+      <ul class="space-y-8 list-disc">
+      <li>Det kræver mere energi at udvinde BitCoin, end hele New Zealand bruger på et år! (a), (b)</p>
+      <li>På bare ét år (2007) blev der skabt en zettabyte data på verdensplan. I 2010 var det fordoblet. I 2035 vil vi skabe mere end 2.000 zettabytes. For at udskrive en zettabyte data skal man bruge papiret fra 20 billioner træer. Der er kun ca. 3,5 billioner træer tilbage på planeten, så det er ikke muligt. (a), (b)</p>
+      <li>I 2022 blev der brugt omkring 70 millioner servere til at lagre data. Hver af dem forårsagede produktion af 1-2 tons CO2. I det år blev omkring 20 millioner af dem til e-affald. (a)</p>
+      <li>99 % af dataene er skabt inden for de sidste 10 år. (a)</p>
+      </ul>
+    </div>
+
+    <div>
+      <ul class="space-y-8 list-disc">
+     <li>Det forbruget af data i dag kræver 3 gange mere energi end alle de solpaneler, verden kan producere! (a)</p>    
+     <li>Internettet producerer mere end 900 millioner tons CO2 hvert år! (a), (b), (c), (d)</p>    
+     <li>90 % af alle data bliver aldrig åbnet 3 måneder efter, at de er blevet gemt. (a)</p>    
+     <li>91% af websiderne får ingen trafik fra Google. (a)</p>    
+<li>Der sendes 320 milliarder e-mails hver dag og 62 billioner spam-mails hvert år = 20 millioner tons CO2! (a), (b)</p>
+<li>En e-mail udleder i gennemsnit 4 g CO2 = CO2-fodaftrykket fra en pære, der er tændt i 6 minutter! (a), (b), (c)</p>
+</ul>
+    </div>
+  </article>
+<h3>Kilder:</h3>
+<p>
+  <Link href="https://www.iea.org/" target="_blank" variant="textlinkgreenunderline" size="standard">(a) International Energy Agency; </Link>
+    <Link href="https://www.energetics.com.au/insights/thought-leadership/bitcoin-tracking-to-consume-more-energy-than-nz" target="_blank" variant="textlinkgreenunderline" size="standard">(b) “Bitcoin Tracking To Consume More Energy Than NZ” – Energetics; </Link>
+  <Link href="https://www.webfx.com/blog/marketing/carbon-footprint-internet/" target="_blank" variant="textlinkgreenunderline" size="standard">(c) Powering the Internet: Your Virtual Carbon Footprint – WebFX; </Link>
+  <Link href="https://www.energuide.be/en/questions-answers/do-i-emit-co2-when-i-surf-the-internet/69/#:~:text=In%20concrete%20terms%2C%20this%20represents,emitted%20per%20inhabitant%20each%20year" target="_blank" variant="textlinkgreenunderline" size="standard">(d) Energuide.be; </Link>
+  <Link href="https://www.demandsage.com/big-data-statistics/#:~:text=120%20zettabytes%20of%20data%20was,compared%20to%20the%20previous%20year." target="_blank" variant="textlinkgreenunderline" size="standard">(e) Demandsage</Link>
+
+</p>
 </MainLayout>
