@@ -11,11 +11,11 @@ import Banner from "../components/Banner.astro";
       <img src="/public/jordklode-hero.svg" alt="" />
     </article>
     <article class="col-span-1 flex flex-col justify-end">
-      <div>
+      <div class="text-center pt-6 md:pt-0 md:text-left">
         <h1>Digital Skraldedag</h1>
       </div>
       <br />
-      <div class="pb-6 max-w-xl mt-4">
+      <div class="pb-6 max-w-xl mt-4 grid justify-items-center">
         <Button variant="primary" size="large">Del resultat</Button>
       </div>
     </article>
@@ -41,13 +41,13 @@ import Banner from "../components/Banner.astro";
         omstrukturere deres online tilstedeværelse.
       </p>
     </article>
-    <article class="col-span-1">
+    <article class="col-span-1 grid justify-items-center">
       <img src="/public/telefon-mails.svg" alt="Telefon med mails" />
     </article>
   </section>
   <h1 class="max-w-5xl mx-auto mt-20 mb-12 p-6">Hvorfor er det vigtigt?</h1>
   <section
-    class="max-w-5xl mx-auto p-6 md:grid grid-cols-5 pt-12 pb-28 gap-x-5"
+    class="max-w-5xl mx-auto p-6 md:grid md:grid-cols-2 lg:grid-cols-5 pt-12 pb-28 gap-x-5"
   >
     <article>
       <div class="flex justify-center items-center">
@@ -129,7 +129,7 @@ import Banner from "../components/Banner.astro";
     </article>
   </section>
   <section class="max-w-5xl mx-auto p-6 md:grid grid-cols-3 py-28">
-    <article class="col-span-1">
+    <article class="pb-8 col-span-1 grid justify-items-center">
       <img src="/public/paere.svg" alt="lyspære" />
     </article>
     <article class="col-span-2 flex flex-col justify-end">
@@ -144,7 +144,7 @@ import Banner from "../components/Banner.astro";
       <br />
       <div class="text-right">
         <Link
-          href="/facts.astro"
+          href="/facts"
           target="_blank"
           variant="textlinkgreen"
           size="standard"
