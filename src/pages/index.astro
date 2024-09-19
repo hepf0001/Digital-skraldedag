@@ -6,7 +6,7 @@ import Banner from "../components/Banner.astro";
 ---
 
 <IndexLayout title="Forside">
-  <section class="max-w-5xl mx-auto p-6 md:grid grid-cols-3 my-28 gap-x-20">
+  <section class="max-w-5xl mx-auto p-6 md:grid grid-cols-3 py-28 gap-x-20">
     <article class="col-span-2">
       <img src="/public/jordklode-hero.svg" alt="" />
     </article>
@@ -20,8 +20,10 @@ import Banner from "../components/Banner.astro";
       </div>
     </article>
   </section>
-  <Banner text="hold av datoen - 15/03/25" />
-  <section class="max-w-5xl mx-auto p-6 md:grid grid-cols-3 my-28 gap-x-20">
+  <Banner text="gem datoen! - 15/03/25" />
+  <section
+    class="max-w-5xl mx-auto p-6 md:grid grid-cols-3 py-28 gap-x-20 border-b-2 border-black"
+  >
     <article class="col-span-2">
       <h1 class="mb-5 flex flex-col justify-end">
         Hvad er Digital Skraldedag?
@@ -43,9 +45,9 @@ import Banner from "../components/Banner.astro";
       <img src="/public/telefon-mails.svg" alt="Telefon med mails" />
     </article>
   </section>
-  <h1 class="max-w-5xl mx-auto p-6">Hvorfor er det vigtigt?</h1>
+  <h1 class="max-w-5xl mx-auto mt-20 mb-12 p-6">Hvorfor er det vigtigt?</h1>
   <section
-    class="max-w-5xl mx-auto p-6 md:grid grid-cols-5 mt-12 mb-28 gap-x-5"
+    class="max-w-5xl mx-auto p-6 md:grid grid-cols-5 pt-12 pb-28 gap-x-5"
   >
     <article>
       <div class="flex justify-center items-center">
@@ -90,11 +92,13 @@ import Banner from "../components/Banner.astro";
       </p>
     </article>
   </section>
-  <Banner text="hold av datoen - 15/03/25" />
-  <h1 class="max-w-5xl mx-auto p-6 my-28">
+  <Banner text="gem datoen! - 15/03/25" />
+  <h1 class="max-w-5xl mx-auto p-6 py-28">
     Inviter en ven til digital skraldedag!
   </h1>
-  <section class="max-w-5xl mx-auto p-6 md:grid grid-cols-2 pb-28">
+  <section
+    class="border-b-2 border-black max-w-5xl mx-auto p-6 md:grid grid-cols-2 pb-28"
+  >
     <article class="flex flex-col justify-center">
       <div class="flex justify-center items-center">
         <img
@@ -124,26 +128,30 @@ import Banner from "../components/Banner.astro";
       </div>
     </article>
   </section>
-  <section class="max-w-5xl mx-auto p-6 md:grid grid-cols-3 my-28">
+  <section class="max-w-5xl mx-auto p-6 md:grid grid-cols-3 py-28">
     <article class="col-span-1">
       <img src="/public/paere.svg" alt="lyspære" />
     </article>
     <article class="col-span-2 flex flex-col justify-end">
-      <h1>Vidste du at?</h1>
+      <h1>Vidste du at...</h1>
       <br />
-      <p>
-        90% af alt data bliver aldrig tilgået 3 måneder efter det bliver lagret!
-      </p>
-      <p>
-        Læs mer <Link
+      <div>
+        <p>
+          90% af alt data bliver aldrig tilgået 3 måneder efter det bliver
+          lagret?
+        </p>
+      </div>
+      <br />
+      <div class="text-right">
+        <Link
           href="/facts.astro"
           target="_blank"
-          variant="textlink"
+          variant="textlinkgreen"
           size="standard"
         >
-          her</Link
+          Læs mer fakta om digitalt avfald her</Link
         >
-      </p>
+      </div>
     </article>
   </section>
 </IndexLayout>
