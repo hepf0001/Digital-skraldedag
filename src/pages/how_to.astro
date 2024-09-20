@@ -12,16 +12,16 @@ import Link from "../components/Link.astro";
       <h1>Sådan gør du en forskel</h1>
     </div>
     <div class="grid place-items-center">
-      <img class="size-96" src="jordklode-co2.svg" alt="placeholder" />
+      <img class="size-96 -my-20" src="/jordklode-co2.svg" alt="jordklode med skyer og pil ned illustration" />
     </div>
   </article>
   <!-- Hero article slut -->
   <!-- Step 1 article start -->
   <article class="flex flex-col items-center md:grid grid-cols-2 md:pr-5 py-8">
     <div class="order-last md:order-none flex justify-center items-center">
-      <img class="sd:pt-8" src="telefon-stovsuger.svg" alt="Telefon der bliver støvsuget" />
+      <img class="sd:pt-8" src="/telefon-stovsuger.svg" alt="Telefon der bliver støvsuget" />
     </div>
-    <div class="content-around px-5">
+    <div class="content-around px-5 pb-5">
       <h2>STEP 1</h2>
       <h3 class="pb-6">RYD OP I DIN SMARTPHONE</h3>
       <p class="">
@@ -34,7 +34,7 @@ import Link from "../components/Link.astro";
   <!-- Step 2 article start -->
 
   <article class="flex items-center flex-col md:grid grid-cols-2 md:pl-8 py-8">
-    <div class="content-around px-10">
+    <div class="content-around px-10 pb-5">
       <h2>STEP 2</h2>
       <h3 class="pb-6">RYD OP I DIN COMPUTER</h3>
       <p class="">
@@ -55,9 +55,9 @@ import Link from "../components/Link.astro";
   <!-- Step 3 article start -->
   <article class="flex items-center flex-col md:grid grid-cols-2 md:pr-4 py-8">
     <div class="order-last md:order-none flex justify-center items-center">
-      <img class="sd:pt-8" src="mails-spand.svg" alt="mailbrev og en vaskespand" />
+      <img class="sd:pt-8" src="/mails-spand.svg" alt="mailbrev og en vaskespand" />
     </div>
-    <div class="content-around px-10">
+    <div class="content-around px-10 pb-5">
       <h2>STEP 3</h2>
       <h3 class="pb-6">RYD OP I DIN MAIL-INDBAKKE</h3>
       <p class="">
@@ -69,29 +69,28 @@ import Link from "../components/Link.astro";
         </a>for, hvordan du rydder op i din indbakke!
       </p>
     </div>
-    </article>
-    <!-- Step 3 article slut -->
-    <!-- Step 4 article start -->
-    <article class="flex items-center flex-col md:grid grid-cols-2 md:pl-7 py-8">
-      <div class="content-around px-10">
-        <h2>STEP 4</h2>
-        <h3 class="pb-6">RYD OP I DIN COMPUTER</h3>
-        <p class="">
-          Brug flere samarbejdssteder i stedet for at sende e-mails. Hold op med at sende 'ok' og 'tak' e-mails! Opbevar de vigtige filer på ét sted i skyen, så der ikke er behov for at have den samme fil på hver computer. Tænk, før du laver backups. Lav mindre 'hurtigt indhold', og vær mere bevidst om dine videoer og fotos. Sørg for kun at tage
-          backup af de filer, du får brug for, og kun af de fotos, du elsker. Små ændringer i dine internetvaner, som f.eks. at slukke for video under et virtuelt møde, reducere kvaliteten af streamingtjenester, mindske spilletiden, begrænse tiden på sociale medier og afmelde nyhedsbreve og e-mail-lister, kan reducere dit miljømæssige fodaftryk
-          betydeligt!
-        </p>
-      </div>
-      <div class="order-last md:order-none flex justify-center items-center">
-        <img class="sd:pt-8" src="mails-kost.svg" alt="Kost der fejer mailbreve" />
-      </div>
-    </article>
-    <!-- Step 4 article slut -->
-
-    <!-- KNAP article start -->
-    <div class="items-center mx-auto max-w-fit">
-      <a href="/formular_1"><Button variant="primary" size="small">Del resultater</Button></a>
+  </article>
+  <!-- Step 3 article slut -->
+  <!-- Step 4 article start -->
+  <article class="flex items-center flex-col md:grid grid-cols-2 md:pl-7 py-8">
+    <div class="content-around px-10 pb-5">
+      <h2>STEP 4</h2>
+      <h3 class="pb-6">RYD OP I DIN COMPUTER</h3>
+      <p class="">
+        Brug flere samarbejdssteder i stedet for at sende e-mails. Hold op med at sende 'ok' og 'tak' e-mails! Opbevar de vigtige filer på ét sted i skyen, så der ikke er behov for at have den samme fil på hver computer. Tænk, før du laver backups. Lav mindre 'hurtigt indhold', og vær mere bevidst om dine videoer og fotos. Sørg for kun at tage
+        backup af de filer, du får brug for, og kun af de fotos, du elsker. Små ændringer i dine internetvaner, som f.eks. at slukke for video under et virtuelt møde, reducere kvaliteten af streamingtjenester, mindske spilletiden, begrænse tiden på sociale medier og afmelde nyhedsbreve og e-mail-lister, kan reducere dit miljømæssige fodaftryk
+        betydeligt!
+      </p>
     </div>
-    <!-- KNAP article slut -->
-  </MainLayout
->
+    <div class="order-last md:order-none flex justify-center items-center pb-5">
+      <img class="sd:pt-8" src="/mails-kost.svg" alt="Kost der fejer mailbreve" />
+    </div>
+  </article>
+  <!-- Step 4 article slut -->
+
+  <!-- KNAP article start -->
+  <div class="items-center mx-auto max-w-fit pb-5">
+    <a href="/formular_1"><Button variant="primary" size="small">Del resultater</Button></a>
+  </div>
+  <!-- KNAP article slut -->
+</MainLayout>

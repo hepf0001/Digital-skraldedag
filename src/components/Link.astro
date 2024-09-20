@@ -1,11 +1,6 @@
 ---
 // Henter parametrene fra Astro.props
-const {
-  href = "#",
-  target = "_self",
-  variant = "textlink",
-  size = "standard",
-} = Astro.props;
+const { href = "#", target = "_self", variant = "textlink", size = "standard" } = Astro.props;
 
 const linkStyling = "transition transform hover:-translate-y-1";
 
@@ -13,10 +8,8 @@ const variantClasses = {
   textlink: "text-black underline",
   textlinkgreen: "text-green-600 hover:underline",
   textlinkgreenunderline: "text-green-600 underline",
-  primary:
-    "bg-green-600 hover:bg-green-700 text-white rounded-lg px-6 p-2 font-semibold uppercase",
-  secondary:
-    "border-2 border-green-600 hover:border-green-700 text-green-600 hover:text-green-700 rounded-lg px-6 p-2 font-semibold uppercase",
+  primary: "bg-green-600 hover:bg-green-700 text-white rounded-lg px-6 p-2 font-semibold uppercase",
+  secondary: "border-2 border-green-600 hover:border-green-700 text-green-600 hover:text-green-700 rounded-lg px-6 p-2 font-semibold uppercase",
 };
 
 const sizeClasses = {
@@ -27,9 +20,4 @@ const sizeClasses = {
 };
 ---
 
-<a
-  href={href}
-  target={target}
-  class:list={[linkStyling, variantClasses[variant], sizeClasses[size]]}
-  ><slot /></a
->
+<a href={href} target={target} class:list={[linkStyling, variantClasses[variant], sizeClasses[size]]}><slot /></a>
